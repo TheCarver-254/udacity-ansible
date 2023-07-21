@@ -1,0 +1,12 @@
+---
+#2. Exercise: Remote Control Using Ansible
+#Exercise for setting up a web server in an EC2
+- name: Exercise for setting up a web server in an EC2
+  hosts: ubuntu
+  # use the public IP of your EC2 instance
+  user: ubuntu
+  become: true
+  #become_method: sudo
+  become_user: root
+  roles:
+    - setup
