@@ -1,1 +1,2 @@
-udacity-prometheus.pem
+# ignores all .pem files
+.pem
